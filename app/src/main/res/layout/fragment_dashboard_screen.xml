@@ -1,0 +1,67 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.likelabs.pollsresult.DashboardScreenFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard_screen_title"
+        android:textSize="15sp"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintTop_toTopOf="parent"
+        tool:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/tv_locality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/country_text_size"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintHorizontal_bias="0.05"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+        tool:layout_constraintVertical_bias="0.07" />
+
+
+    <TextView
+        android:id="@+id/tv_ward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/country_text_size"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintHorizontal_bias="0.05"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintTop_toBottomOf="@+id/tv_locality"
+        tool:layout_constraintVertical_bias="0.06999999" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintStart_toEndOf="@+id/tv_ward"
+        tool:layout_constraintTop_toBottomOf="@+id/tv_locality"
+        tool:layout_constraintVertical_bias="0.06999999" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintHorizontal_bias="0.0"
+        tool:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
