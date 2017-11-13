@@ -23,7 +23,6 @@ class SplashScreen : BaseActivity() {
         checkPermission()
     }
 
-
     @RequiresApi(Build.VERSION_CODES.M)
     fun checkPermission() {
         if (Build.VERSION.SDK_INT >= 23) {
